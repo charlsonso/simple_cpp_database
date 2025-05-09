@@ -21,7 +21,7 @@ void insert_user(session& sql,
     const string& last_name,
     const string& email){
   sql << "INSERT INTO users(first_name, last_name email) VALUES(:fn, :ln, :e)",
-          user(first_name, "fn"), user(last_name, "ln"), use(email, "e");
+          use(first_name, "fn"), use(last_name, "ln"), use(email, "e");
 
   cout << ">Succesfully inserted user." << endl << endl;
 }
